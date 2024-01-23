@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CatActivity">
+
+    <TextView
+        android:id="@+id/catTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="39dp"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/primaryBlue"
+        android:text="Abstract"/>
+
+    <TextView
+        android:id="@+id/catCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/catTitle"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/primaryBlue"
+        android:textSize="20dp"
+        android:fontFamily="@font/nunito_regular"
+        android:text="56 wallpapers"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/catRcv"
+        android:layout_below="@+id/catCount"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragments.DownloadFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtMain"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="39dp"
+            android:textColor="@color/primaryBlue"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_marginStart="20dp"
+            android:text="Downloaded" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvCollection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtMain"/>
+
+
+    </RelativeLayout>
+</FrameLayout>
